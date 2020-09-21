@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: binjitakandelbaral
-  Date: 9/20/20
-  Time: 5:42 PM
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -12,6 +6,14 @@
     <jsp:param name="title" value="Practice MVC"/></jsp:include>
 </head>
 <body>
-<h1>Hello !</h1>
+<h5>Form For email and password</h5>
 </body>
+
+<form method="POST" action="/login.jsp">
+    <label for="email">Email:</label>
+    <input id="email" name="email" placeholder="Enter your email address" />
+    <label for="passw">Password:</label>
+    <input type="password" id="passw" name="passw" placeholder="Enter your Password" />
+    <input type="submit" name="submit">
+</form>
 </html>
