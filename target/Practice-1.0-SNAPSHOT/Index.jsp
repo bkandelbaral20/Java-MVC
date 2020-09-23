@@ -6,9 +6,8 @@
     <jsp:param name="title" value="Practice MVC"/></jsp:include>
 </head>
 <body>
-<h5>Form For email and password</h5>
-</body>
-
+<%@ include file="Partials/navbar.jsp" %>
+<h3>Form For email and password</h3>
 <form method="POST" action="/login.jsp">
     <label for="email">Email:</label>
     <input id="email" name="email" placeholder="Enter your email address" />
@@ -16,4 +15,5 @@
     <input type="password" id="passw" name="passw" placeholder="Enter your Password" />
     <input type="submit" name="submit">
 </form>
+</body>
 </html>
