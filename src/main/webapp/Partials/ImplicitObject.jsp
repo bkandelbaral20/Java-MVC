@@ -13,3 +13,7 @@
 <%--//while checking the parameter name type ?name=binji or anyhthing to check--%>
 
 <p>"method" attribute: <%= request.getMethod() %></p>
+<%--it will shows which type of method use used on this--%>
+
+<p>User-Agent header: <%= request.getHeader("user-agent") %></p>
+<%--print out the laptop user--%>
