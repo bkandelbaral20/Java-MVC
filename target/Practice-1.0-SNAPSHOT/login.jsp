@@ -6,8 +6,12 @@
 <head>
     <jsp:include page="Partials/head.jsp">
         <jsp:param name="title" value="practise login"/>
+    </jsp:include>
 </head>
 <body>
+<%--        <%@ include file="Partials/navbar.jsp" %>--%>
+  <jsp:include page="Partials/navbar.jsp" ></jsp:include>
+<jsp:include page="Partials/ImplicitObject.jsp"></jsp:include>
 
 <%--method 1--%>
 <% String e = request.getParameter("email"); %>

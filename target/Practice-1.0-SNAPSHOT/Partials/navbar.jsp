@@ -1,11 +1,16 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: binjitakandelbaral
-  Date: 9/22/20
-  Time: 6:38 PM
-  To change this template use File | Settings | File Templates.
---%>
 
-<nav>
-    This is my Navbar
-</nav>
+
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </li>
+</ul>
