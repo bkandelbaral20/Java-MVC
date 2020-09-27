@@ -14,18 +14,23 @@
 <jsp:include page="Partials/ImplicitObject.jsp"></jsp:include>
 
 <%--method 1--%>
-<% String e = request.getParameter("email"); %>
-<%  request.setAttribute("email",e); %>
+<%--<% String e = request.getParameter("email"); %>--%>
+<%--<%  request.setAttribute("email",e); %>--%>
 
-<% String p = request.getParameter("passw"); %>
-<% request.setAttribute("password", p); %>
+<%--<% String p = request.getParameter("passw"); %>--%>
+<%--<% request.setAttribute("password", p); %>--%>
 
-<p> Here is my email : ${email} </p>
-<p> Here is my password :  ${password} </p>
+<%--<p> Here is my email : ${email} </p>--%>
+<%--<p> Here is my password :  ${password} </p>--%>
 
 <%--Method 2--%>
 <p> Here is my email = <%= request.getParameter( "email" )%></p>
 <p> Here is my password = <%= request.getParameter( "passw" )%></p>
+<%--for the username--%>
+<p> Here is my username = <%= request.getParameter( "uname" )%></p>
+
+
+<h1>Hello there, ${uname}!</h1>
 
 
 

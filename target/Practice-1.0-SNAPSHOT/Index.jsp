@@ -16,12 +16,24 @@
 
 <h3>Form For email and password</h3>
 <form method="POST" action="/login.jsp">
+    <label for="uname">UserName:</label>
+    <input id="uname" name="uname" placeholder="Enter your user name" />
     <label for="email">Email:</label>
     <input id="email" name="email" placeholder="Enter your email address" />
     <label for="passw">Password:</label>
     <input type="password" id="passw" name="passw" placeholder="Enter your Password" />
     <input type="submit" name="submit">
 </form>
+
+<%--for the mvc exerxcises--%>
+<% if (request.getParameter("uname") == null || request.getParameter("psw") == null) {
+} else if (request.getParameter("uname").equalsIgnoreCase("admin") && request.getParameter("psw").equalsIgnoreCase("password")) {
+    response.sendRedirect("/profile.jsp");
+} else {
+    response.getWriter().println("<h1>Incorrect page </h1>");
+} %>
+
+<%--linking bootsraps scripts--%>
 <%@ include file="Partials/Scripts.jsp" %>
 </body>
 </html>
