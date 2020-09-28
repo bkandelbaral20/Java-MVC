@@ -12,11 +12,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/products/create")
+@WebServlet(name = "CreateProductServlet", urlPatterns = "/create")
 public class CreateProductServlet  extends HttpServlet{
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws
             ServletException, IOException {
-        request.getRequestDispatcher("/products/create.jsp").forward(request, response);
+        request.getRequestDispatcher("/create.jsp").forward(request, response);
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Products productsDao = DaoFactory.getProductsDao();
