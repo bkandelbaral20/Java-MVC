@@ -18,6 +18,7 @@ public class CreateProductServlet  extends HttpServlet{
             ServletException, IOException {
         request.getRequestDispatcher("/create.jsp").forward(request, response);
     }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Products productsDao = DaoFactory.getProductsDao();
 
