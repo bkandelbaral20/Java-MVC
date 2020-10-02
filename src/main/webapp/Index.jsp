@@ -40,7 +40,7 @@
 <h1> Here are all the products:</h1>
 <c:forEach var="product" items="${products}">
     <div class ="product">
-        <h2>${product.name}</h2>
+        <h2>Products: ${product.name}</h2>
         <p>Price : $ ${product.price}</p>
     </div>
 </c:forEach>
