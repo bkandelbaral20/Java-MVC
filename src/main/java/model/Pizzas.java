@@ -1,7 +1,10 @@
 package model;
 
-public interface Pizzas {
-    Pizza findById(long id);
+import java.util.List;
 
-    void  createBurger(Pizza pizza);
+public interface Pizzas {
+    void  createPizza(Pizza pizza);
+
+    List<Pizza> all ();
+
 }

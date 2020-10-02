@@ -6,15 +6,15 @@ public class Pizza {
 
     //    variables
     private long id;
-    private String burgerName;
+    private String PizzaName;
 
 
     //default constructor
     public Pizza() {
     }
 
-    public Pizza(String burgerName) {
-        this.burgerName = burgerName;
+    public Pizza(String PizzaName) {
+        this.PizzaName = PizzaName;
 
     }
 
@@ -26,12 +26,11 @@ public class Pizza {
         this.id = id;
     }
 
-    public String getBurgerName() {
-        return burgerName;
+    public String getPizzaName() {
+        return PizzaName;
     }
 
-    public void setBurgerName(String burgerName) {
-        this.burgerName = burgerName;
+    public void setPizzaName(String pizzaName) {
+        PizzaName = pizzaName;
     }
-
 }

@@ -44,6 +44,15 @@
         <p>Price : $ ${product.price}</p>
     </div>
 </c:forEach>
+
+<%--this one is for Pizza--%>
+<h1> Here are all the pizzas:</h1>
+<c:forEach var="product" items="${pizzas}">
+    <div class ="product">
+        <h2>Pizzas: ${pizzas.name}</h2>
+        <p>Price : $ ${product.price}</p>
+    </div>
+</c:forEach>
 <%--linking bootsraps scripts--%>
 <%@ include file="Partials/Scripts.jsp" %>
 </body>

@@ -22,4 +22,9 @@ public class ListPizza implements Pizzas {
     public void createBurger(Pizza pizza) {
         this.pizzas.add(pizza);
     }
+
+    @Override
+    public List<Pizza> all() {
+        return this.pizzas;
+    }
 }
