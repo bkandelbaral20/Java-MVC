@@ -8,17 +8,18 @@ public class ListPizza implements Pizzas {
 //    creating arraylist for pizza
     private List<Pizza> pizzas = new ArrayList<>();
 
-//    public ListPizza(){
-//        createBurger(new pizza(""))
-//    }
-
-    @Override
-    public Pizza findById(long id) {
-        return null;
+//    creating pizza list
+    public ListPizza(){
+        createBurger(new Pizza("cheese"));
     }
 
     @Override
-    public long createBurger(Pizza pizza) {
-        return 0;
+    public Pizza findById(long id) {
+        return pizzas.get((int)id - 1);
+    }
+
+    @Override
+    public void createBurger(Pizza pizza) {
+        this.pizzas.add(pizza);
     }
 }
