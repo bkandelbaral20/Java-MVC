@@ -10,16 +10,17 @@ public class ListPizza implements Pizzas {
 
 //    creating pizza list
     public ListPizza(){
-        createBurger(new Pizza("cheese"));
+        createPizza(new Pizza("cheese"));
+        createPizza(new Pizza("Veg-cheese"));
     }
 
-    @Override
-    public Pizza findById(long id) {
-        return pizzas.get((int)id - 1);
-    }
+//    @Override
+//    public Pizza findById(long id) {
+//        return pizzas.get((int)id - 1);
+//    }
 
     @Override
-    public void createBurger(Pizza pizza) {
+    public void createPizza(Pizza pizza) {
         this.pizzas.add(pizza);
     }
 

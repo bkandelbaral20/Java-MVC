@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "ShowProductsServlet", urlPatterns = "/pizza")
+@WebServlet(name = "ShowPizzaServlet", urlPatterns = "/pizza")
 public class ShowPizzaServlet  extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
